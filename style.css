@@ -2,12 +2,17 @@
   --red-color: #ff6263;
   --pink-color: #b9345a;
   --green-color: #50dbb4;
+  --dark-blue: #03203c;
 }
-
+* {
+  margin: 0;
+}
 body {
   background-color: var(--red-color);
 }
-
+a {
+  color: var(--dark-blue);
+}
 img {
   width: 50vh;
   height: 30vh;
@@ -17,17 +22,29 @@ img {
 input {
   padding: 0.5rem 0.3rem;
   border-radius: 0.7rem;
-  margin: 1rem 0rem;
+  margin: 2rem 0rem 0rem 1rem;
 }
 button {
   width: 40%;
   margin: auto;
   border-radius: 1rem;
   padding: 0.3rem;
+  margin-top: 1rem;
+  background-color: var(--green-color);
+  color: #03203c;
+  font-weight: bolder;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink-color);
+  height: 9vh;
+  text-align: center;
 }
 .hero {
   text-align: center;
-  color: #14626c;
+  color: var(--dark-blue);
 }
 .container {
   width: 40%;
@@ -56,8 +73,33 @@ button {
   margin-top: 1rem;
 }
 #privacy-concern {
+  margin: 1.3rem 0rem;
   background-color: var(--green-color);
   border-radius: 1rem;
   text-align: center;
   padding: 0.2rem;
+}
+
+.list-item-inline {
+  display: inline;
+  margin: 0 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 8vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--pink-color);
+  border-radius: 5rem 0rem;
+  padding: 0.3rem 0rem;
+}
+.footer-header {
+  margin-bottom: 1rem;
+  font-size: larger;
 }
