@@ -1,0 +1,15 @@
+:root {
+  --red-color: ;
+  --pink-color: ;
+}
+
+body {
+  /* background-color: red; */
+}
+
+img {
+  width: 50vh;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
