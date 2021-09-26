@@ -33,6 +33,7 @@ button {
   background-color: var(--green-color);
   color: #03203c;
   font-weight: bolder;
+  cursor: pointer;
 }
 header {
   display: flex;
@@ -78,6 +79,8 @@ header {
   border-radius: 1rem;
   text-align: center;
   padding: 0.2rem;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .list-item-inline {

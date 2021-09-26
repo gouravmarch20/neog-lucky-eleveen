@@ -23,7 +23,7 @@ function sumOfDob (userDob) {
   return sumOfDob
 }
 function checkLuck () {
-  if (userDob.value  == false ) {
+  if (userDob.value == false) {
     console.log(userDob.value)
     alert('fill form carefully ')
     return
@@ -42,6 +42,6 @@ function checkLuck () {
   }
 }
 btnLuck.addEventListener('click', checkLuck)
-privacyConcern.addEventListener("click" , ()=>{
-  privacyConcern.style.display = "none"
+privacyConcern.addEventListener('click', () => {
+  privacyConcern.style.display = 'none'
 })
