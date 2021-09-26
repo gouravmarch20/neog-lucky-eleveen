@@ -3,6 +3,7 @@ const luckyNumber = document.querySelector('#lucky-number')
 const btnLuck = document.querySelector('#btn-luck')
 const output = document.querySelector('#output')
 const message = document.querySelector('#message')
+const privacyConcern = document.querySelector('#privacy-concern')
 
 function userDobConvertor (userDob) {
   newUserDob = userDob.replace('-', '')
@@ -11,6 +12,7 @@ function userDobConvertor (userDob) {
 }
 function addText (text) {
   message.innerText = text
+  message.style.background = '#B9345A'
 }
 
 function sumOfDob (userDob) {
@@ -21,9 +23,17 @@ function sumOfDob (userDob) {
   return sumOfDob
 }
 function checkLuck () {
+  if (userDob.value  == false ) {
+    console.log(userDob.value)
+    alert('fill form carefully ')
+    return
+  }
+
   const userDobString = userDobConvertor(userDob.value)
   const sum = sumOfDob(userDobString)
-  if (sum % 2 == 0) {
+
+  // if (sum % Number(luckyNumber.value) == 0) {
+  if (sum % Number(2) == 0) {
     output.innerHTML = `  <img src="./images/happy.gif" alt="">`
     addText('Your date of birth is lucky ')
   } else {
@@ -32,3 +42,6 @@ function checkLuck () {
   }
 }
 btnLuck.addEventListener('click', checkLuck)
+privacyConcern.addEventListener("click" , ()=>{
+  privacyConcern.style.display = "none"
+})

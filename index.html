@@ -11,21 +11,28 @@
 
 <body>
     <header>
-        <h2>Is your birthday lucky</h2>
-</header>
-    <main>
+        <h2 class="hero">Is your birthday lucky</h2>
+    </header>
+    <main class="container">
+
         <label for="user-dob"></label>
-        <input type="date" name="" id="user-dob">
+        <input type="date" name="" id="user-dob" required>
         <label for="lucky-number"></label>
         <input type="number" name="" id="lucky-number">
         <button type="submit" id="btn-luck">Check luck</button>
+        <p id="privacy-concern"> We Don't Store any type of Date you enter in this Website
+
+        </p>
+
     </main>
+    <div class="processing">
+        Astrology predictions
+        <p id="output">
 
-    <p id="output">
+        </p>
+        <h1 id="message"></h1>
+    </div>
 
-    </p>
-<h1 id="message"></h1>
-  
     <script src="./app.js"></script>
 </body>
 
