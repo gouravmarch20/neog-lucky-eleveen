@@ -33,7 +33,7 @@ function checkLuck () {
   const sum = sumOfDob(userDobString)
 
   // if (sum % Number(luckyNumber.value) == 0) {
-  if (sum % Number(2) == 0) {
+  if (sum % Number(luckyNumber.value) == 0) {
     output.innerHTML = `  <img src="./images/happy.gif" alt="">`
     addText('Your date of birth is lucky ')
   } else {
